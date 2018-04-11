@@ -4,8 +4,7 @@ const Service = require('../lib/service');
 const config = {
   db: {
     host: process.env.DB_HOST || ['localhost'],
-    port: process.env.DB_PORT || 9042,
-    keyspace: 'sample'
+    port: process.env.DB_PORT || 27017
   }
 };
 
