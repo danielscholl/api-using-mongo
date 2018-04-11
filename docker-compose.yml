@@ -1,0 +1,13 @@
+version: '2'
+services:
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+  api:
+    image: api-using-mongo:latest
+    ports:
+      - "8080:3000"
+    environment:
+      DB_HOST: db
+      DB_PORT: 27017

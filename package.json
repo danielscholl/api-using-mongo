@@ -1,0 +1,47 @@
+{
+  "name": "api-using-mongo",
+  "version": "0.0.4",
+  "description": "MicroService",
+  "main": "index.js",
+  "repository": {},
+  "author": {
+    "name": "Daniel Scholl"
+  },
+  "engines": {
+    "node": "8.10.0",
+    "npm": "5.8.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "tape test/*.spec.js",
+    "watch": "watch 'clear && npm run -s test' .",
+    "db": "docker run -it -d -p 27017:27017 --name mongo mongo",
+    "db:stop": "docker rm -f mongo",
+    "db:cli": "docker exec -it mongo mongo",
+    "build": "docker build -t api-using-mongo:latest .",
+    "docker": "docker-compose -p sample up -d",
+    "docker:clean": "docker-compose -p sample stop && docker-compose -p sample rm --force",
+    "docker:tag": "docker tag api-using",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "tape": "^4.6.3",
+    "watch": "^1.0.1"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "bunyan-format": "^0.2.1",
+    "cross-env": "^3.1.4",
+    "hapi": "^16.1.0",
+    "hapi-io": "^0.1.0",
+    "hapi-swagger": "^7.6.0",
+    "inert": "^4.1.0",
+    "joi": "^10.2.2",
+    "moment": "^2.17.1",
+    "@danielscholl/mongo-lib": "^1.0.0",
+    "require-hapiroutes": "^0.1.9",
+    "uuid": "^3.0.1",
+    "vision": "^4.1.1"
+  }
+}
