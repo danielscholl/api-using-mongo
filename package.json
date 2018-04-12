@@ -17,7 +17,7 @@
     "db": "docker run -it -d -p 27017:27017 --name mongo mongo",
     "db:stop": "docker rm -f mongo",
     "db:cli": "docker exec -it mongo mongo",
-    "build": "docker build -t api-using-mongo:latest .",
+    "build": "docker build -t danielscholl/api-using-mongo:latest .",
     "docker": "docker-compose -p sample up -d",
     "docker:clean": "docker-compose -p sample stop && docker-compose -p sample rm --force",
     "docker:tag": "docker tag api-using",
