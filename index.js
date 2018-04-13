@@ -18,7 +18,7 @@ const SwaggerOptions = {
 const server = new Hapi.Server();
 
 server.connection({
-  port: process.env.API_PORT || 3000,
+  port: process.env.PORT || 3000,
   routes: {
        cors: true
   }

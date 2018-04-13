@@ -794,7 +794,7 @@ hapi-io@^0.1.0:
     lodash "^4.14.1"
     socket.io "^1.4.8"
 
-hapi-swagger@^7.6.0:
+hapi-swagger@^7.10.0:
   version "7.10.0"
   resolved "https://registry.yarnpkg.com/hapi-swagger/-/hapi-swagger-7.10.0.tgz#acdc53d4064f7acee39a9c8c8105c5a6cc4f953f"
   dependencies:
@@ -807,7 +807,7 @@ hapi-swagger@^7.6.0:
     json-schema-ref-parser "^4.0.0"
     swagger-parser "^3.4.2"
 
-hapi@^16.1.0:
+hapi@^16.6.2:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/hapi/-/hapi-16.6.3.tgz#ca9ae1d028afb64d98ac07a1219a1b5eff14d01a"
   dependencies:
@@ -1496,8 +1496,8 @@ resolve-from@^2.0.0:
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-2.0.0.tgz#9480ab20e94ffa1d9e80a804c7ea147611966b57"
 
 resolve@^1.1.6:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.0.tgz#2bdf5374811207285df0df652b78f118ab8f3c5e"
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
     path-parse "^1.0.5"
 

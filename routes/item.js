@@ -18,8 +18,8 @@ module.exports.routes = [
       tags: ['api'],
       validate: {
         params: {
-          pageSize: Joi.number().optional(),
-          pageIndex: Joi.number().optional()
+          // pageSize: Joi.number(),
+          // pageIndex: Joi.number()
         }
       }
     },
